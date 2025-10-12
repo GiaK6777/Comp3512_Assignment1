@@ -1,4 +1,4 @@
-require_once 'config.inc.php';
+<?php require_once 'config.inc.php';
 
 try {
     $pdo = new PDO(DBCONNSTRING, DBUSER, DBPASS);
@@ -6,3 +6,4 @@ try {
 } catch (Exception $e) {
     die($e->getMessage());
 }
+?>
